@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+  }
+  .logo a {
+    display: inline-flex;
+    font-size: 1em;
+  }
+  .links {
+    display: flex;
+    padding-right: 2em;
+  }
+  .links a {
+    padding-left: 10pt;
+    padding-right: 10pt;
+    background-color: skyblue;
+    display: inline-block;
+  }
+  .header div {
+    display: inline-block;
+  }
+  .logo img {
+    height: 4em;
+    width: auto;
+    display: block;
+  }
+  h1,
+  h2 {
+    color: black;
+  }
+  h1{
+    font-size: 42pt;
+  }
+  a {
+    text-decoration: none;
+  }
