@@ -1,9 +1,6 @@
-const nav = document.querySelector('.navbar')
-fetch('/navbar.html')
-.then(res=>res.text())
-.then(data=>{
-    nav.innerHTML=data
-    const parser = new DOMParser()
-    const doc = parser.parseFromString(data, 'text/html')
-    eval(doc.querySelector('script').textContent)
-})
+xHttpOP = new XMLHttpRequest();
+xHttpOP.onload = function () {
+  document.querySelector(".navbar").innerHTML = this.responseText;
+};
+xHttpOP.open("GET", "/hambg/elements/header.html");
+xHttpOP.send();
