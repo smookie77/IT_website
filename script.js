@@ -1,6 +1,4 @@
-xHttpOP = new XMLHttpRequest();
-xHttpOP.onload = function () {
-  document.querySelector(".navbar").innerHTML = this.responseText;
-};
-xHttpOP.open("GET", "/hambg/elements/header.html");
-xHttpOP.send();
+$(function () {
+  $("#navbar").load("/hambg/elements/header.html");
+  $("#endbar").load("/hambg/elements/footer.html");
+});

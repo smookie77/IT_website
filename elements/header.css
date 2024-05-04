@@ -8,15 +8,15 @@
     align-items: center;
     background-color: lightblue;
   }
-  .logo a {
+  .header .logo a {
     display: inline-flex;
     font-size: 1em;
   }
-  .links {
+  .header .links {
     display: flex;
     padding-right: 2em;
   }
-  .links a {
+  .header .links a {
     padding-left: 10pt;
     padding-right: 10pt;
     background-color: skyblue;
@@ -30,12 +30,11 @@
     width: auto;
     display: block;
   }
-  h1,
-  h2 {
+  .header h1, .header h2 {
     color: black;
   }
-  h1{
-    font-size: 42pt;
+  .header h1{
+    font-size: 40pt;
   }
   a {
     text-decoration: none;
