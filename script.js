@@ -47,6 +47,44 @@ function createHeader() {
   headerDiv.appendChild(linksDiv);
   document.body.prepend(headerDiv);
 }
+function addCSS(cssPath) {
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = cssPath;
+  document.head.appendChild(link);
+}
+
+function createFooter() {
+  const footerDiv = document.createElement('div');
+  footerDiv.className = 'footer';
+
+  const contactsDiv = document.createElement('div');
+  contactsDiv.className = 'Contacts';
+
+  const contactsHeader = document.createElement('h3');
+  contactsHeader.textContent = 'Contacts';
+
+  const emailLink1 = document.createElement('a');
+  emailLink1.href = 'mailto:antoan.m.tsonkov.2023@elsys-bg.org';
+  const emailText1 = document.createElement('p');
+  emailText1.textContent = 'smookie77';
+  const emailLink2 = document.createElement('a');
+  emailLink2.href = 'mailto:alexandar.a.grigorov.2023@elsys-bg.org';
+  const emailText2 = document.createElement('p');
+  emailText2.textContent = 'Mr.G';
+
+  emailLink1.appendChild(emailText1);
+  emailLink2.appendChild(emailText2);
+  contactsDiv.appendChild(contactsHeader);
+  contactsDiv.appendChild(emailLink1);
+  contactsDiv.appendChild(emailLink2);
+  footerDiv.appendChild(contactsDiv);
+  document.body.appendChild(footerDiv);
+}
+
+addCSS('./elements/footer.css');
+createFooter();
+
 
 addCSS("/hambg/elements/header.css");
 createHeader();
