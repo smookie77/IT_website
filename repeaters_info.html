@@ -1,41 +1,58 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <style> html {scroll-behavior: smooth;} </style>
+    </head>
     <body>
-        <h1>See information about the repeaters in Sofia</h1>
-        <iframe src="https://www.google.com/maps/d/embed?mid=1yRmsirePrDWj8R5TionLk7hIPR7Cv68&ehbc=2E312F" width="100%" height="750em"> </iframe>
-        <table>
-            <tbody>
-                <tr>
-                    <td valign="top" title="CallSign" lz0tuk="" class=""><div class="hidden">CallSign</div>&nbsp;<span>LZ0TUK</span></td>
-                    <td valign="top" title="QTH"><div class="hidden">QTH</div>&nbsp;<span>KN12OP</span></td>
-                    <td valign="top" title="QTH"><div class="hidden">QTH</div>&nbsp;<span>София</span></td>
-                    <td valign="top" title="QTH"><div class="hidden">QTH</div>&nbsp;<span>КРТЦ Копитото</span></td>
-                    <td valign="top" title="Rx" style="text-align:right;"><div class="hidden">Rx</div>&nbsp;<span>438.1</span></td>
-                    <td valign="top" title="Tx" style="text-align:right;"><div class="hidden">Tx</div>&nbsp;<span>430.5</span></td>
-                    <td valign="top" title="Offset" style="text-align:center;"><div class="hidden">offset</div>&nbsp;<span>7.6</span></td>
-                    <td valign="top" title="Tone" style="text-align:right;"><div class="hidden">Tone</div>&nbsp;<span>79.7</span></td>
-                    <td valign="top" title="Mode" style="text-align:right;"><div class="hidden">Mode</div>&nbsp;<span>analog</span></td>
-                    <td valign="top" title="Type" style="text-align:right;" type=""><div class="hidden">Type</div>&nbsp;<span></span></td>
-                    <td valign="top" title="Altitude" style="text-align:center;"><div class="hidden">Altitude</div>&nbsp;<span>1345м.</span></td>
-                    <td valign="top" title="Comment" style="text-align:center;"><div class="hidden">Comment</div>&nbsp;<span>RU648</span></td>
-                    <td valign="top" title="EchoLink" style="text-align:center;"><div class="hidden">EchoLink</div>&nbsp;<span>438100</span></td>
-                </tr>
-                <tr>
-                    <td valign="top" title="CallSign" lz0cbk=""><div class="hidden">CallSign</div>&nbsp;<span>LZ0CBK</span></td>
-                    <td valign="top" title="QTH"><div class="hidden">QTH</div>&nbsp;<span>KN12OP</span></td>
-                    <td valign="top" title="QTH"><div class="hidden">QTH</div>&nbsp;<span>София</span></td>
-                    <td valign="top" title="QTH"><div class="hidden">QTH</div>&nbsp;<span>Хотел Копитото</span></td>
-                    <td valign="top" title="Rx" style="text-align:right;"><div class="hidden">Rx</div>&nbsp;<span>438.6</span></td>
-                    <td valign="top" title="Tx" style="text-align:right;"><div class="hidden">Tx</div>&nbsp;<span>431</span></td>
-                    <td valign="top" title="Offset" style="text-align:center;"><div class="hidden">offset</div>&nbsp;<span>7.6</span></td>
-                    <td valign="top" title="Tone" style="text-align:right;"><div class="hidden">Tone</div>&nbsp;<span></span></td>
-                    <td valign="top" title="Mode" style="text-align:right;"><div class="hidden">Mode</div>&nbsp;<span>analog</span></td>
-                    <td valign="top" title="Type" style="text-align:right;" type=""><div class="hidden">Type</div>&nbsp;<span></span></td>
-                    <td valign="top" title="Altitude" style="text-align:center;"><div class="hidden">Altitude</div>&nbsp;<span>1303м.</span></td>
-                    <td valign="top" title="Comment" style="text-align:center;"><div class="hidden">Comment</div>&nbsp;<span>RU688</span></td>
-                    <td valign="top" title="EchoLink" style="text-align:center;"><div class="hidden">EchoLink</div>&nbsp;<span></span></td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="Nav Bar">
+            <a class="Map" href="#Map">Map</a>
+            <a class="info" href="#info">Repeaters info</a>
+        </div>
+        <p id="map">
+            <div class="Map">
+                <h1 id="Map">See the locations of the repeaters in Sofia</h1>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1yRmsirePrDWj8R5TionLk7hIPR7Cv68&ehbc=2E312F" width="100%" height="900m"> </iframe>
+            </div>
+        </p>
+        <p id="information">
+            <div class="info">
+                <h1 id="info">See all the of the info about the repeaters</h1>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td valign="top" title="CallSign" lz0tuk="" class=""><div class="hidden">CallSign</div>&nbsp;<span>LZ0TUK</span></td>
+                            <td valign="top" title="QTH"><div class="hidden">QTH</div>&nbsp;<span>KN12OP</span></td>
+                            <td valign="top" title="QTH"><div class="hidden">QTH</div>&nbsp;<span>София</span></td>
+                            <td valign="top" title="QTH"><div class="hidden">QTH</div>&nbsp;<span>КРТЦ Копитото</span></td>
+                            <td valign="top" title="Rx" style="text-align:right;"><div class="hidden">Rx</div>&nbsp;<span>438.1</span></td>
+                            <td valign="top" title="Tx" style="text-align:right;"><div class="hidden">Tx</div>&nbsp;<span>430.5</span></td>
+                            <td valign="top" title="Offset" style="text-align:center;"><div class="hidden">offset</div>&nbsp;<span>7.6</span></td>
+                            <td valign="top" title="Tone" style="text-align:right;"><div class="hidden">Tone</div>&nbsp;<span>79.7</span></td>
+                            <td valign="top" title="Mode" style="text-align:right;"><div class="hidden">Mode</div>&nbsp;<span>analog</span></td>
+                            <td valign="top" title="Type" style="text-align:right;" type=""><div class="hidden">Type</div>&nbsp;<span></span></td>
+                            <td valign="top" title="Altitude" style="text-align:center;"><div class="hidden">Altitude</div>&nbsp;<span>1345м.</span></td>
+                            <td valign="top" title="Comment" style="text-align:center;"><div class="hidden">Comment</div>&nbsp;<span>RU648</span></td>
+                            <td valign="top" title="EchoLink" style="text-align:center;"><div class="hidden">EchoLink</div>&nbsp;<span>438100</span></td>
+                        </tr>
+                        <tr>
+                            <td valign="top" title="CallSign" lz0cbk=""><div class="hidden">CallSign</div>&nbsp;<span>LZ0CBK</span></td>
+                            <td valign="top" title="QTH"><div class="hidden">QTH</div>&nbsp;<span>KN12OP</span></td>
+                            <td valign="top" title="QTH"><div class="hidden">QTH</div>&nbsp;<span>София</span></td>
+                            <td valign="top" title="QTH"><div class="hidden">QTH</div>&nbsp;<span>Хотел Копитото</span></td>
+                            <td valign="top" title="Rx" style="text-align:right;"><div class="hidden">Rx</div>&nbsp;<span>438.6</span></td>
+                            <td valign="top" title="Tx" style="text-align:right;"><div class="hidden">Tx</div>&nbsp;<span>431</span></td>
+                            <td valign="top" title="Offset" style="text-align:center;"><div class="hidden">offset</div>&nbsp;<span>7.6</span></td>
+                            <td valign="top" title="Tone" style="text-align:right;"><div class="hidden">Tone</div>&nbsp;<span></span></td>
+                            <td valign="top" title="Mode" style="text-align:right;"><div class="hidden">Mode</div>&nbsp;<span>analog</span></td>
+                            <td valign="top" title="Type" style="text-align:right;" type=""><div class="hidden">Type</div>&nbsp;<span></span></td>
+                            <td valign="top" title="Altitude" style="text-align:center;"><div class="hidden">Altitude</div>&nbsp;<span>1303м.</span></td>
+                            <td valign="top" title="Comment" style="text-align:center;"><div class="hidden">Comment</div>&nbsp;<span>RU688</span></td>
+                            <td valign="top" title="EchoLink" style="text-align:center;"><div class="hidden">EchoLink</div>&nbsp;<span></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </p>
     </body>
+    <script>src=""</script>
 </html>
