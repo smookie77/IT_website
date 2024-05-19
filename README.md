@@ -1,6 +1,1 @@
-МНОГО ВАЖНО! За проверяващите:
-Уебсайта да се пусне на apache и mysql сървър(правено е на XAMPP), защото няма да работят JavaScript GET заявките.
-При клониране на репото трябва да се преименува папка на "hambg" и да се постави в htdocs, ако се ползва XAMPP/LAMPP.
-За пускането на mysql се импортва .sql файла, чрез PHPMyAdmin по възможност със същото име, за да работи изобщо.
-
-Приятно ви проверяване!
+This branch is a test branch! The code in here may not work as intended or it can be outdated!
