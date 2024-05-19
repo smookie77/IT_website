@@ -49,18 +49,43 @@
         background-color: #f1f1f1;
       }
     </style>
+    <style>
+      .Nav {
+        text-align: center;
+      }
+
+      .Nav a {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px;
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .Nav a:hover {
+        background-color: #45a049; /* Darker Green */
+      }
+
+    </style>
+    
   </head>
 
   <body>
     <header id="navbar"></header>
     <header class="navbar"></header>
-    <div class="Nav Bar">
-      <a class="Map" href="#Map" onclick="showMapPage()">Map</a>
-      <a class="info" href="#info" onclick="showInformationPage()">Repeaters info</a>
-    </div>
     <div id="map" class="content">
       <!-- Your map content here -->
       <h1>See the locations of the repeaters in Sofia</h1>
+      <div class="Nav Bar">
+      <a class="Map" href="#Map" onclick="showMapPage()">Map</a>
+      <a class="info" href="#info" onclick="showInformationPage()">Repeaters info</a>
+    </div>
       <iframe
         src="https://www.google.com/maps/d/embed?mid=1yRmsirePrDWj8R5TionLk7hIPR7Cv68&ehbc=2E312F"
         width="100%"
@@ -70,6 +95,10 @@
     <div id="information" class="content hidden">
       <!-- Your repeaters information content here -->
       <h1>See all the info about the repeaters</h1>
+      <div class="Nav Bar">
+      <a class="Map" href="#Map" onclick="showMapPage()">Map</a>
+      <a class="info" href="#info" onclick="showInformationPage()">Repeaters info</a>
+    </div>
       <table>
         <tr>
           <th>CALLSIGN</th>
