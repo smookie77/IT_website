@@ -1,6 +1,10 @@
+/* Style for the entire page (body tag)*/
 body {
-    /* background-color: rgb(0, 0, 0); (Potential change)*/
-    color: rgb(35, 38, 31);
-    font-family: 'Courier New', Courier; 
-    text-align: center;
+  font-family: Arial, sans-serif;
+  color: #555;
+}
+
+/* Style for the h1 tag */
+h1 {
+  color: #007bff;   
 }
