@@ -1,0 +1,41 @@
+    /* Style for the content within the container */
+  .container .content {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 20px;
+  }
+  
+  /* Style for the h1 tag */
+  .container .content h1 {
+    font-size: 2rem; /* Responsive size */
+    color: #007bff; /* Blue color */
+  }
+  
+  /* Style for the h2 tag */
+  .container .content h2 {
+    font-size: 1.5rem; /* Responsive size */
+    color: #555;
+  }
+  
+  /* Style for the h3 tag */
+  .container .content h3 {
+    font-size: 1.25rem; /* Responsive size */
+    color: #777;
+    background-color: #f9f9f9; /* Light grey background */
+    border: 1px solid #ddd; /* Light grey border */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Style for links within the content */
+  .container .content a {
+    color: #007bff; /* Blue color */
+    text-decoration: none;
+  }
+  
+  /* Style for links on hover */
+  .container .content a:hover {
+    text-decoration: underline;
+  }
+  
