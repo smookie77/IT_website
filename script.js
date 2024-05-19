@@ -72,12 +72,18 @@ function createFooter() {
   emailLink2.href = 'mailto:aleksandar.a.grigorov.2023@elsys-bg.org';
   const emailText2 = document.createElement('p');
   emailText2.textContent = 'Mr.G';
+  const emailLink3 = document.createElement('a');
+  emailLink3.href = 'mailto:aleksandar.v.beshev.2023@elsys-bg.org';
+  const emailText3 = document.createElement('p');
+  emailText3.textContent = 'MrBeshev';
 
   emailLink1.appendChild(emailText1);
   emailLink2.appendChild(emailText2);
+  emailLink2.appendChild(emailText3);
   contactsDiv.appendChild(contactsHeader);
   contactsDiv.appendChild(emailLink1);
   contactsDiv.appendChild(emailLink2);
+  contactsDiv.appendChild(emailLink3);
   footerDiv.appendChild(contactsDiv);
   document.body.appendChild(footerDiv);
 }
