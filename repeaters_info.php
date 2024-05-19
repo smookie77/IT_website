@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+    <script lang="JavaScript">
+      <?php 
+      
+      $servername = "localhost";
+      $username = "root";
+      $password = "";
+      $dbname = "Repeaters";
+      
+      // Create connection
+      $conn = new mysqli($servername, $username, $password, $dbname);
+      // Check connection
+      if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+      }
+      
+      ?>
+    </script>
     <link rel="stylesheet" href="./navbar.css">
     <style>
       /* Your CSS styles here */
@@ -9,14 +27,14 @@
       }
     </style>
   </head>
+
   <body>
     <header id="navbar"></header>
     <header class="navbar"></header>
     <div class="Nav Bar">
       <a class="Map" href="#Map" onclick="showMapPage()">Map</a>
       <a class="info" href="#info" onclick="showInformationPage()"
-        >Repeaters info</a
-      >
+        >Repeaters info</a>
     </div>
     <div id="map" class="content">
       <!-- Your map content here -->
@@ -32,10 +50,31 @@
       <h1>See all the info about the repeaters</h1>
       <table>
         <!-- Your table content here -->
+      <tr>
+        <th>CALLSIGN</th>
+        <th>QTH1</th>
+        
+      </tr>
+          <?php
+          $sql = "SELECT * FROM repeaters_info";
+          $result = $conn->query($sql);
+
+          if ($result->num_rows > 0) {
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+              echo "id: " . $row["CALLSIGN"]. " - Name: " . $row["QTH1"]. " " . $row["QTH2"]. "<br>";
+            }
+          } else {
+            echo "0 results";
+          }
+          $conn->close();
+          ?>
+        
+         
       </table>
     </div>
     <footer id="endbar"></footer>
-    <script>
+    <script lang="JavaScript">
       // JavaScript functions to show/hide divs
       function showMapPage() {
         document.getElementById("map").style.display = "block";
@@ -52,4 +91,4 @@
     </script>
   </body>
 </html>
-<script src="./script.js"></script>
+<script language="JavaScript" src="./script.js"></script>
