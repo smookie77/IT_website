@@ -79,7 +79,7 @@ function createFooter() {
 
   emailLink1.appendChild(emailText1);
   emailLink2.appendChild(emailText2);
-  emailLink2.appendChild(emailText3);
+  emailLink3.appendChild(emailText3);
   contactsDiv.appendChild(contactsHeader);
   contactsDiv.appendChild(emailLink1);
   contactsDiv.appendChild(emailLink2);
