@@ -69,7 +69,7 @@ function createFooter() {
   const emailText1 = document.createElement('p');
   emailText1.textContent = 'smookie77';
   const emailLink2 = document.createElement('a');
-  emailLink2.href = 'mailto:alexandar.a.grigorov.2023@elsys-bg.org';
+  emailLink2.href = 'mailto:aleksandar.a.grigorov.2023@elsys-bg.org';
   const emailText2 = document.createElement('p');
   emailText2.textContent = 'Mr.G';
 

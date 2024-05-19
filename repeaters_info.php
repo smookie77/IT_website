@@ -25,6 +25,29 @@
       .hidden {
         display: none;
       }
+
+      /* Table styles */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 18px;
+        text-align: left;
+      }
+      table th, table td {
+        padding: 12px;
+        border: 1px solid #ddd;
+      }
+      table th {
+        background-color: #f2f2f2;
+        color: #333;
+      }
+      table tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      table tr:hover {
+        background-color: #f1f1f1;
+      }
     </style>
   </head>
 
@@ -33,8 +56,7 @@
     <header class="navbar"></header>
     <div class="Nav Bar">
       <a class="Map" href="#Map" onclick="showMapPage()">Map</a>
-      <a class="info" href="#info" onclick="showInformationPage()"
-        >Repeaters info</a>
+      <a class="info" href="#info" onclick="showInformationPage()">Repeaters info</a>
     </div>
     <div id="map" class="content">
       <!-- Your map content here -->
@@ -42,43 +64,56 @@
       <iframe
         src="https://www.google.com/maps/d/embed?mid=1yRmsirePrDWj8R5TionLk7hIPR7Cv68&ehbc=2E312F"
         width="100%"
-        height="900m"
+        height="1600pt"
       ></iframe>
     </div>
     <div id="information" class="content hidden">
       <!-- Your repeaters information content here -->
       <h1>See all the info about the repeaters</h1>
       <table>
-        <!-- Your table content here -->
-      <tr>
-        <th>CALLSIGN</th>
-        <th>QTH1</th>
-        <th>QTH2</th>
-        <th>QTH3</th>
-        <th>RX</th>
-        <th>TX</th>
-        <th>OFFSET</th>
-        <th>TONE</th>
-        <th>MODE</th>
-        <th>TYPE</th>
-        <th>ALT</th>
-        <th>COM</th>
-        <th>ECHO</th>
-    </tr>
-          <?php
-          $sql = "SELECT * FROM repeaters_info";
-          $result = $conn->query($sql);
+        <tr>
+          <th>CALLSIGN</th>
+          <th>QTH1</th>
+          <th>QTH2</th>
+          <th>QTH3</th>
+          <th>RX</th>
+          <th>TX</th>
+          <th>OFFSET</th>
+          <th>TONE</th>
+          <th>MODE</th>
+          <th>TYPE</th>
+          <th>ALT</th>
+          <th>COM</th>
+          <th>ECHO</th>
+        </tr>
+        <?php
+        $sql = "SELECT * FROM repeaters_info";
+        $result = $conn->query($sql);
 
-          if ($result->num_rows > 0) {
-            // output data of each row
-            while($row = $result->fetch_assoc()) {
-              echo "<tr> <th>" . $row["CALLSIGN"]. "</th> <th>" . $row["QTH1"]. "</th><th> " . $row["QTH2"] ."</th><th>" .$row["QTH3"] ."</th><th>" .$row["RX"] ."</th><th>" .$row["TX"] ."</th><th>" .$row["OFFSET"] ."</th><th>". $row["TONE"] ."</th><th>". $row["MODE"] ."</th><th>". $row["TYPE"]."</th><th>". $row["ALT"] ."</th><th>". $row["COM"] ."</th><th>". $row["ECHO"] ."</th> </tr>";
-            }
-          } else {
-            echo "0 results";
+        if ($result->num_rows > 0) {
+          // output data of each row
+          while($row = $result->fetch_assoc()) {
+            echo "<tr>
+                    <td>" . $row["CALLSIGN"] . "</td>
+                    <td>" . $row["QTH1"] . "</td>
+                    <td>" . $row["QTH2"] . "</td>
+                    <td>" . $row["QTH3"] . "</td>
+                    <td>" . $row["RX"] . "</td>
+                    <td>" . $row["TX"] . "</td>
+                    <td>" . $row["OFFSET"] . "</td>
+                    <td>" . $row["TONE"] . "</td>
+                    <td>" . $row["MODE"] . "</td>
+                    <td>" . $row["TYPE"] . "</td>
+                    <td>" . $row["ALT"] . "</td>
+                    <td>" . $row["COM"] . "</td>
+                    <td>" . $row["ECHO"] . "</td>
+                  </tr>";
           }
-          $conn->close();
-          ?>
+        } else {
+          echo "<tr><td colspan='13'>0 results</td></tr>";
+        }
+        $conn->close();
+        ?>
       </table>
     </div>
     <footer id="endbar"></footer>
