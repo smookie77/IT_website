@@ -53,8 +53,18 @@
       <tr>
         <th>CALLSIGN</th>
         <th>QTH1</th>
-        
-      </tr>
+        <th>QTH2</th>
+        <th>QTH3</th>
+        <th>RX</th>
+        <th>TX</th>
+        <th>OFFSET</th>
+        <th>TONE</th>
+        <th>MODE</th>
+        <th>TYPE</th>
+        <th>ALT</th>
+        <th>COM</th>
+        <th>ECHO</th>
+    </tr>
           <?php
           $sql = "SELECT * FROM repeaters_info";
           $result = $conn->query($sql);
@@ -62,15 +72,13 @@
           if ($result->num_rows > 0) {
             // output data of each row
             while($row = $result->fetch_assoc()) {
-              echo "id: " . $row["CALLSIGN"]. " - Name: " . $row["QTH1"]. " " . $row["QTH2"]. "<br>";
+              echo "<tr> <th>" . $row["CALLSIGN"]. "</th> <th>" . $row["QTH1"]. "</th><th> " . $row["QTH2"] ."</th><th>" .$row["QTH3"] ."</th><th>" .$row["RX"] ."</th><th>" .$row["TX"] ."</th><th>" .$row["OFFSET"] ."</th><th>". $row["TONE"] ."</th><th>". $row["MODE"] ."</th><th>". $row["TYPE"]."</th><th>". $row["ALT"] ."</th><th>". $row["COM"] ."</th><th>". $row["ECHO"] ."</th> </tr>";
             }
           } else {
             echo "0 results";
           }
           $conn->close();
           ?>
-        
-         
       </table>
     </div>
     <footer id="endbar"></footer>

@@ -82,7 +82,7 @@ function createFooter() {
   document.body.appendChild(footerDiv);
 }
 
-addCSS('./elements/footer.css');
+addCSS('/hambg/elements/footer.css');
 createFooter();
 
 
@@ -96,12 +96,3 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById('navbar').innerHTML = data;
     });
 });
-function showMapPage() {
-  document.getElementById("map").style.display = "block";
-  document.getElementById("info").style.display = "none";
-}
-
-function showInformationPage() {
-  document.getElementById("map").style.display = "none";
-  document.getElementById("info").style.display = "block";
-}
