@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-
+  <meta name="viewport" content="width=device-width, initial-scale=0.8">
     <script lang="JavaScript">
       <?php 
       
@@ -81,7 +81,7 @@
     <header class="navbar"></header>
     <div id="map" class="content">
       <!-- Your map content here -->
-      <h1>See the locations of the repeaters in Sofia</h1>
+      <h1 style="text-align=center;">See the locations of the repeaters in Sofia</h1>
       <div class="Nav Bar">
       <a class="Map" href="#Map" onclick="showMapPage()">Map</a>
       <a class="info" href="#info" onclick="showInformationPage()">Repeaters info</a>
@@ -99,7 +99,7 @@
       <a class="Map" href="#Map" onclick="showMapPage()">Map</a>
       <a class="info" href="#info" onclick="showInformationPage()">Repeaters info</a>
     </div>
-      <table>
+      <table class="rep-table">
         <tr>
           <th>CALLSIGN</th>
           <th>QTH1</th>
@@ -160,7 +160,13 @@
 
       // Show map by default
       showMapPage();
-    </script>
-  </body>
+
+</script>
+<style>
+  .rep-table{
+    bottom-margin: 40pt;
+  }
+</style>
+</body>
 </html>
 <script language="JavaScript" src="./script.js"></script>

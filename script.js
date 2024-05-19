@@ -28,8 +28,7 @@ function createHeader() {
   linksDiv.className = "links";
 
   const links = [
-    { href: "", text: "Become a radio amateur" },
-    { href: "", text: "Join a radio club!" },
+    { href: "https://radiolubiteli.start.bg/", text: "Join a radio club!" },
     { href: "http://crc.bg", text: "CRC.BG*" },
     { href: "/hambg/about.html", text: "About" },
   ];
