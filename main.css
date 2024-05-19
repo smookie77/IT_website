@@ -1,8 +1,36 @@
 body {
     font-family: Arial, sans-serif;
-    font-size: 1rem;
+    background-color: #e0f7fa; /* Light blue background */
+    color: #333; /* Dark text for readability */
 }
-
-h1 {
-  color: #007bff;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.intro {
+    background-color: #b3e5fc; /* Slightly darker light blue */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.section {
+    background-color: #ffffff; /* White background for sections */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.section h2 {
+    color: #0288d1; /* Dark blue for headings */
+}
+.section p {
+    line-height: 1.6;
+}
+.links a {
+    color: #0277bd; /* Darker blue for links */
+    text-decoration: none;
+}
+.links a:hover {
+    text-decoration: underline;
 }
