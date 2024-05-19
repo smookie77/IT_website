@@ -71,6 +71,7 @@ function createFooter() {
   emailLink2.href = 'mailto:aleksandar.a.grigorov.2023@elsys-bg.org';
   const emailText2 = document.createElement('p');
   emailText2.textContent = 'Mr.G';
+  const emailLink3 = document.createElement('a');
   emailLink3.href = 'mailto:aleksandar.v.beshev.2023@elsys-bg.org';
   const emailText3 = document.createElement('p');
   emailText3.textContent = 'MrBeshev';
